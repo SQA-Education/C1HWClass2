@@ -26,15 +26,15 @@ audio{width:100%;margin-top:14px}.hidden{display:none}.score-card{background:lin
 .btn-back:hover{background:#e5e7eb}
 
 .option.correct-reveal{background:#dcfce7 !important;border-color:#22c55e !important;color:#166534}
-.option.correct-reveal::after{content:" ✓";font-weight:700;color:#16a34a}
+.option.correct-reveal::after{content:" \2713";font-weight:700;color:#16a34a}
 .option.wrong-reveal{background:#fee2e2 !important;border-color:#ef4444 !important;color:#991b1b}
-.option.wrong-reveal::after{content:" ✗";font-weight:700;color:#dc2626}
+.option.wrong-reveal::after{content:" \2717";font-weight:700;color:#dc2626}
 .option.review-locked{pointer-events:none;cursor:default}
 </style>
 </head>
 <body>
 <div class="container">
-<div class="header"><h1>C1 Job Skills 2 - Class 2 Homework</h1><p>Effective Communication at Work and School • Conditionals and Education Acronyms</p></div>
+<div class="header"><h1>C1 Job Skills 2 - Class 2 Homework</h1><p>Effective Communication at Work and School &bull; Conditionals and Education Acronyms</p></div>
 
 <div class="section active" id="start"><div class="card">
 <label>Your Full Name</label><input type="text" id="studentName" placeholder="Enter your name...">
@@ -47,7 +47,7 @@ audio{width:100%;margin-top:14px}.hidden{display:none}.score-card{background:lin
 <option value="3100" data-teacher="Hector Amaya">3100 - Tue/Thu 6:30 PM (Hector)</option>
 </optgroup>
 </select>
-<button class="btn" onclick="startQuiz()">Start Homework →</button>
+<button class="btn" onclick="startQuiz()">Start Homework &rarr;</button>
 <div class="note">This C1 homework consolidates Class 2 only: zero, first, and second conditionals in professional contexts; education acronyms such as ESL, GED, TOEFL, K-12, STEM, ELL, MAP, SPED, and GPA; and solution-focused workplace dialogue.</div>
 </div></div>
 
@@ -58,26 +58,26 @@ audio{width:100%;margin-top:14px}.hidden{display:none}.score-card{background:lin
 <p>During the discussion, the team also talks about training and development. One participant says that if staff received better time-management training, productivity would improve. Another adds that if new employees understand company language and acronyms more quickly, they will adapt faster and feel more confident.</p>
 <p>By the end of the meeting, the group agrees to draft a practical plan. They want to address both internal communication habits and the kind of language employees need in educational and professional settings.</p>
 </div>
-<div id="readingQuestions"></div><button class="btn" onclick="checkS1()">Continue →</button></div></div>
+<div id="readingQuestions"></div><button class="btn" onclick="checkS1()">Continue &rarr;</button></div></div>
 
-<div class="section" id="s2"><div class="card"><button type="button" class="btn-back" onclick="showSection('s1')">← Back</button><div class="progress"><div class="progress-bar" style="width:40%"></div></div><h2>2. Vocabulary</h2><p class="small">Match the acronym or key term to its best meaning.</p><div class="word-bank" id="wordBank"></div><div id="vocabDrops"></div><button class="btn" onclick="checkS2()">Continue →</button><div class="tip-box"><strong>Real-life English tip:</strong> At advanced levels, acronyms like <em>GED</em>, <em>TOEFL</em>, and <em>ELL</em> are not just vocabulary items — they signal familiarity with education systems and institutional language.</div></div></div>
+<div class="section" id="s2"><div class="card"><button type="button" class="btn-back" onclick="showSection('s1')">&larr; Back</button><div class="progress"><div class="progress-bar" style="width:40%"></div></div><h2>2. Vocabulary</h2><p class="small">Match the acronym or key term to its best meaning.</p><div class="word-bank" id="wordBank"></div><div id="vocabDrops"></div><button class="btn" onclick="checkS2()">Continue &rarr;</button><div class="tip-box"><strong>Real-life English tip:</strong> At advanced levels, acronyms like <em>GED</em>, <em>TOEFL</em>, and <em>ELL</em> are not just vocabulary items &mdash; they signal familiarity with education systems and institutional language.</div></div></div>
 
-<div class="section" id="s3"><div class="card"><button type="button" class="btn-back" onclick="showSection('s2')">← Back</button><div class="progress"><div class="progress-bar" style="width:60%"></div></div><h2>3. Writing</h2><p class="small">Write 7–9 sentences proposing solutions to improve communication in a school or workplace. Use at least two different conditionals and at least three class terms or acronyms.</p><textarea id="writing" placeholder="If employees communicate...
+<div class="section" id="s3"><div class="card"><button type="button" class="btn-back" onclick="showSection('s2')">&larr; Back</button><div class="progress"><div class="progress-bar" style="width:60%"></div></div><h2>3. Writing</h2><p class="small">Write 7&ndash;9 sentences proposing solutions to improve communication in a school or workplace. Use at least two different conditionals and at least three class terms or acronyms.</p><textarea id="writing" placeholder="If employees communicate...
 If a team had better training...
 When students understand...
 If we focused on...
-Programs like ESL or GED can..."></textarea><p class="small" style="text-align:right">Words: <span id="wc">0</span></p><div class="tip-box"><strong>Grammar tip:</strong> At C1, choosing the right conditional matters: use zero for general truths, first for realistic future outcomes, and second for strategic or hypothetical improvements.</div><div id="wFeedback" class="feedback hidden"></div><button class="btn" id="wBtn" onclick="checkWriting()">Get Feedback →</button><button class="btn hidden" id="wNext" onclick="showSection('s4')">Continue →</button></div></div>
+Programs like ESL or GED can..."></textarea><p class="small" style="text-align:right">Words: <span id="wc">0</span></p><div class="tip-box"><strong>Grammar tip:</strong> At C1, choosing the right conditional matters: use zero for general truths, first for realistic future outcomes, and second for strategic or hypothetical improvements.</div><div id="wFeedback" class="feedback hidden"></div><button class="btn" id="wBtn" onclick="checkWriting()">Continue &rarr;</button><button class="btn hidden" id="wNext" onclick="showSection('s4')">Continue &rarr;</button></div></div>
 
-<div class="section" id="s4"><div class="card"><button type="button" class="btn-back" onclick="showSection('s3')">← Back</button><div class="progress"><div class="progress-bar" style="width:80%"></div></div><h2>4. Speaking</h2><p class="small">Speak for 45–60 seconds about how better communication and training could improve a school or workplace environment. Use at least one conditional naturally.</p><div class="record-btn" id="recBtn" onclick="toggleRec()"><div class="record-dot"></div></div><div class="timer" id="timer">0:00</div><div class="status" id="recStatus">Click to start recording</div><audio id="audio" controls class="hidden"></audio><div id="transcriptBox" class="transcript-box hidden"></div><div id="sFeedback" class="feedback hidden"></div><button class="btn" id="sBtn" onclick="checkSpeaking()" disabled>Continue →</button></div></div>
+<div class="section" id="s4"><div class="card"><button type="button" class="btn-back" onclick="showSection('s3')">&larr; Back</button><div class="progress"><div class="progress-bar" style="width:80%"></div></div><h2>4. Speaking</h2><p class="small">Speak for 45&ndash;60 seconds about how better communication and training could improve a school or workplace environment. Use at least one conditional naturally.</p><div class="record-btn" id="recBtn" onclick="toggleRec()"><div class="record-dot"></div></div><div class="timer" id="timer">0:00</div><div class="status" id="recStatus">Click to start recording</div><audio id="audio" controls class="hidden"></audio><div id="transcriptBox" class="transcript-box hidden"></div><div id="sFeedback" class="feedback hidden"></div><button class="btn" id="sBtn" onclick="checkSpeaking()" disabled>Continue &rarr;</button></div></div>
 
-<div class="section" id="s5"><div class="card"><button type="button" class="btn-back" onclick="showSection('s4')">← Back</button><div class="progress"><div class="progress-bar" style="width:100%"></div></div><h2>5. Grammar & Usage</h2><div id="grammarQuestions"></div><button class="btn btn-orange" onclick="submitFinal()">Submit Homework ✓</button></div></div>
+<div class="section" id="s5"><div class="card"><button type="button" class="btn-back" onclick="showSection('s4')">&larr; Back</button><div class="progress"><div class="progress-bar" style="width:100%"></div></div><h2>5. Grammar &amp; Usage</h2><div id="grammarQuestions"></div><button class="btn btn-orange" onclick="submitFinal()">Submit Homework &check;</button></div></div>
 
-<div class="section" id="results"><div class="score-card"><p style="opacity:.85">Homework Complete!</p><div class="score-big" id="finalPct">0%</div><p id="studentDisplay"></p><div class="scores"><div><label>Reading</label><span id="scL">0/3</span></div><div><label>Vocab</label><span id="scV">0/6</span></div><div><label>Writing</label><span id="scW">0/20</span></div><div><label>Speaking</label><span id="scS">0/20</span></div><div><label>Grammar</label><span id="scG">0/8</span></div></div><button type="button" class="btn" onclick="reviewGrammar()" style="background:#f3f4f6;color:#5B5091;border:1px solid #d1d5db;margin-bottom:10px">📝 Review Your Grammar Answers</button><button id="submitBtn" class="btn btn-orange" style="margin-top:20px" onclick="submitToTeacher()">Finish →</button><div id="submitStatus" style="display:none;margin-top:16px;background:#f0fdf4;border:2px solid #22c55e;border-radius:12px;padding:16px;text-align:center;color:#15803d"></div></div></div>
+<div class="section" id="results"><div class="score-card"><p style="opacity:.85">Homework Complete!</p><div class="score-big" id="finalPct">0%</div><p id="studentDisplay"></p><div class="scores"><div><label>Reading</label><span id="scL">0/3</span></div><div><label>Vocab</label><span id="scV">0/6</span></div><div><label>Writing</label><span id="scW">&#128105;&#8205;&#127979;</span></div><div><label>Speaking</label><span id="scS">0/20</span></div><div><label>Grammar</label><span id="scG">0/8</span></div></div><button type="button" class="btn" onclick="reviewGrammar()" style="background:#f3f4f6;color:#5B5091;border:1px solid #d1d5db;margin-bottom:10px">&#128221; Review Your Grammar Answers</button><button id="submitBtn" class="btn btn-orange" style="margin-top:20px" onclick="submitToTeacher()">Finish &rarr;</button><div id="submitStatus" style="display:none;margin-top:16px;background:#f0fdf4;border:2px solid #22c55e;border-radius:12px;padding:16px;text-align:center;color:#15803d"></div></div></div>
 </div>
 
 <script>
 const readingQBank=[
-{q:"What is one manager’s main point?",opts:["Clear expectations improve workflow","Projects always fail because of technology","Training is never necessary"],correct:0},
+{q:"What is one manager\u2019s main point?",opts:["Clear expectations improve workflow","Projects always fail because of technology","Training is never necessary"],correct:0},
 {q:"What happens if misunderstandings are ignored?",opts:["They can become bigger conflicts","They solve themselves quickly","They improve morale"],correct:0},
 {q:"What does one participant say about better time-management training?",opts:["It could improve productivity","It would reduce all meetings permanently","It only matters in schools"],correct:0},
 {q:"Why is it useful for employees to understand acronyms more quickly?",opts:["It helps them adapt faster and feel more confident","It makes meetings longer","It replaces training"],correct:0}
@@ -130,7 +130,20 @@ function dropWord(target){
 }
 function checkS2(){let c=0;document.querySelectorAll('.drop-target').forEach(t=>{if(t.textContent===t.dataset.a)c++;});scores.v=c;showSection('s3');}
 document.getElementById('writing').addEventListener('input',function(){document.getElementById('wc').textContent=this.value.trim().split(/\s+/).filter(Boolean).length;});
-function checkWriting(){writingText=document.getElementById('writing').value;const wc=writingText.split(/\s+/).filter(Boolean).length;let score=14;if((writingText.match(/\bif\b/gi)||[]).length>=2)score+=3;else if((writingText.match(/\bif\b/gi)||[]).length>=1)score+=2;if(wc>=60)score+=4;else if(wc>=40)score+=3;else if(wc>=25)score+=2;scores.w=Math.min(20,score);document.getElementById('wFeedback').innerHTML='<b>Score: '+scores.w+'/20</b><br>Great work! This C1 writing score rewards your use of conditionals and clear communication. Your teacher will give detailed feedback in class.';document.getElementById('wFeedback').classList.remove('hidden');document.getElementById('wBtn').classList.add('hidden');document.getElementById('wNext').classList.remove('hidden');}
+function checkWriting(){
+  writingText=document.getElementById('writing').value||'';
+  const raw=writingText.trim();
+  const wc=raw?raw.split(/\s+/).filter(Boolean).length:0;
+  if(wc<15){alert('Please write at least 15 words');return;}
+  const fb=document.getElementById('wFeedback');
+  fb.innerHTML='<strong>\u2713 Writing Saved</strong><br>'
+    +'Word count: '+wc
+    +'<br><br><span style="color:#15803d">\uD83D\uDC69\u200D\uD83C\uDFEB <b>Your teacher will read and grade your writing personally.</b></span>'
+    +'<br><span style="color:#555;font-size:0.92em">Writing isn\'t scored automatically because language quality needs a real reader. Your teacher will follow up with your writing score and feedback.</span>';
+  fb.classList.remove('hidden');
+  document.getElementById('wBtn').classList.add('hidden');
+  document.getElementById('wNext').classList.remove('hidden');
+}
 function toggleRec(){if(!isRec) startRec(); else stopRec();}
 function startRec(){
   const SR=window.SpeechRecognition||window.webkitSpeechRecognition;
@@ -184,16 +197,16 @@ function submitFinal(){
     cb.id='reviewContinueBtn';
     cb.className='btn btn-orange';
     cb.style.marginTop='15px';
-    cb.textContent='Continue to Results →';
+    cb.textContent='Continue to Results \u2192';
     cb.onclick=function(){showSection('results');};
     s5Card.appendChild(cb);
   }
-  const total=scores.l+scores.v+scores.w+scores.s+scores.g;
-  document.getElementById('finalPct').textContent=Math.round(total/57*100)+'%';
+  const total=scores.l+scores.v+scores.s+scores.g;
+  document.getElementById('finalPct').textContent=Math.round(total/37*100)+'%';
   document.getElementById('studentDisplay').textContent=name;
   document.getElementById('scL').textContent=scores.l+'/3';
   document.getElementById('scV').textContent=scores.v+'/6';
-  document.getElementById('scW').textContent=scores.w+'/20';
+  document.getElementById('scW').textContent='\uD83D\uDC69\u200D\uD83C\uDFEB';
   document.getElementById('scS').textContent=scores.s+'/20';
   document.getElementById('scG').textContent=scores.g+'/8';
   showSection('results');
@@ -204,13 +217,13 @@ function submitToTeacher(){
   const speakingTranscript=spokenText||'';
   const formData=new FormData();
   const cls=document.getElementById('className')?document.getElementById('className').value:'';
-  const teacherVal=document.getElementById('teacherName')?document.getElementById('teacherName').value:'Angela Gradiska';
+  const teacherVal=document.getElementById('teacherName')?document.getElementById('teacherName').value:'';
   formData.append('entry.154629934',name);
   formData.append('entry.771629595',cls);
   formData.append('entry.1564061356','2');
   formData.append('entry.1994438750',document.getElementById('scL').textContent);
   formData.append('entry.1169985852',document.getElementById('scV').textContent);
-  formData.append('entry.66378887',document.getElementById('scW').textContent);
+  formData.append('entry.66378887','Teacher will grade');
   formData.append('entry.665897330',document.getElementById('scS').textContent);
   formData.append('entry.1528226896',document.getElementById('scG').textContent);
   formData.append('entry.543147037',pctText);
@@ -221,9 +234,9 @@ function submitToTeacher(){
     method:'POST',mode:'no-cors',body:formData
   }).catch(function(){});
   const btn=document.getElementById('submitBtn');
-  if(btn){btn.disabled=true;btn.textContent='Submitted ✓';btn.style.background='#22c55e';}
+  if(btn){btn.disabled=true;btn.textContent='Submitted \u2713';btn.style.background='#22c55e';}
   const status=document.getElementById('submitStatus');
-  if(status){status.innerHTML='✅ <strong>Homework submitted successfully!</strong><br><span style="font-size:0.9em;color:#555">Your teacher has received your work.</span><br><br><button onclick="location.reload()" style="margin-top:8px;padding:10px 20px;background:#5B5091;color:#fff;border:none;border-radius:10px;font-size:15px;cursor:pointer;font-family:inherit">🔄 Retake Homework</button>';status.style.display='block';}}
+  if(status){status.innerHTML='\u2705 <strong>Homework submitted successfully!</strong><br><span style="font-size:0.9em;color:#555">Your teacher has received your work.</span><br><br><button onclick="location.reload()" style="margin-top:8px;padding:10px 20px;background:#5B5091;color:#fff;border:none;border-radius:10px;font-size:15px;cursor:pointer;font-family:inherit">\uD83D\uDD04 Retake Homework</button>';status.style.display='block';}}
 </script>
 </body>
 </html>
